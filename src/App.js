@@ -1,19 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { ReactDOM } from 'react-dom';
+import ExpenseEntryItem from './components/ExpenseEntryItem';
 
-function MyButton() {
-  return (
-    <button>
-      I'm a button
-    </button>
-  );
-}
-
-export default function MyApp() {
-  return (
-    <div>
-      <h1>Welcome to my app</h1>
-      <MyButton />
-    </div>
-  );
-}
+ReactDOM.render(
+  <React.ScrictMode>
+    <ExpenseEntryItem />
+  </React.ScrictMode>
+  document.getElementById('root')
+)
